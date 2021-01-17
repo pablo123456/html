@@ -1,0 +1,90 @@
+<html>
+  <head><title>Formulários</title>
+    <script>
+      function valida(f){
+      if(f.nome.value==""){
+      alert("O campo nome não pode ficar vazio!");
+      return false;
+      }
+      }
+   </script>
+ </head>
+   <body>
+     <B>Preencha o formulário e clique no botão Enviar</B>
+     <P><FORM ACTION="Form.html" METHOD="POST" onsubmit="return valida(this);">
+     <TABLE BORDER="1" CELLPEDING="4>">
+     <TR>
+     <TD>NOME</TD>
+     <TD><INPUT TYPE="text" SIZE="45" 
+     NAME="nome"></TD>
+     </TR>
+     <TR>
+       <TD>Sexo:</TD>
+       <TD>
+         <INPUT TYPE="Radio" NAME="Sexo"
+         VALUE="M" CHECKED>MASCULINO
+         <INPUT TYPE="Radio" NAME="Sexo"
+         VALUE="F">FEMININO
+         </TD>
+         </TR>
+         
+         <tr>
+         <td>Cidade</td>
+         <td><input type="text" size="20"
+         name="Cidade"></td></tr>
+         
+         <tr>
+         <td>Estado</td>
+         <td>
+         <select name="estado">
+         <option value="0>">Selecione
+         <option value="1">Sp
+         <option value="2">Rj
+         </select>
+         </td>
+         
+         <tr>
+         <td COLSPAN="2" align="center">
+         <b>Quais objetos a seguir você gosta?
+         </b></td></tr>
+         
+         <tr align="center">
+         <td COLSPAN="2">
+         <input type="checkbox" name="geladeira"
+          value="Gel">Geladeira &nbsp;
+          <input type="checkbox" name="VideoGame"
+          value="VG">VideoGame &nbsp;
+          <input type="checkbox" name="Celular"
+          value="Cel">Celular &nbsp;
+          <input type="checkbox" name="Tv"
+          value="Tv">Televisão
+        </td>
+      </tr>
+        
+        <tr>
+        <td>Menssagem</td>
+        <td><textarea name="mensagem" rows="4"
+        cols="35">
+        </textarea></td>
+        </tr>
+        
+        <tr>
+        <td align="center" colspan="2">
+        <input type="Submit" value="Enviar">&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="Reset" value="Limpar">
+        </td>
+      </tr>
+    </TABLE>
+  </body>
+</html
+ 
+  
+         
+         
+         
+         
+         
+   
